@@ -85,7 +85,7 @@
                 </item>
                 <item>
                     <name>Checkpoints buffers segments (buffers_checkpoint)</name>
-                    <type>0</type>
+                    <type>10</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
