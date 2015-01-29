@@ -2,7 +2,7 @@
 Agenless remote postgresql monitoring using zabbix
 ===================
 
-Postgresql Template for Zabbix (Agenless)
+Postgresql Template for Zabbix (Agentless)
 
 1. place the script "db-pgstat.pl" at zabbix-server externalscripts folder (https://www.zabbix.com/documentation/2.0/manual/config/items/itemtypes/external), make sure it has execute permission (Ubuntu - /usr/share/zabbix/externalscripts). 
 2. Import the template "Template_App_PostgreSQL.xml".
