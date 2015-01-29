@@ -31,8 +31,8 @@ my ($hostname, $database, $user, $pass, $help);
 my %querys = (
 # State    
     "size"              =>  qq{SELECT SUM(pg_database_size(datid)) as total_size from pg_stat_database},
-    "threads"           =>  qq{SELECT COUNT(*) FROM pg_stat_activity_allusers},
-    "activethreads"     =>  qq{SELECT COUNT(*) FROM pg_stat_activity_allusers where state!='idle'},
+    "threads"           =>  qq{SELECT COUNT(*) FROM pg_stat_activity},
+    "activethreads"     =>  qq{SELECT COUNT(*) FROM pg_stat_activity where state!='idle'},
     "activeconn"        =>      qq{SELECT SUM(numbackends) FROM pg_stat_database},
     "tupreturned"       =>      qq{SELECT SUM(tup_returned) FROM pg_stat_database},
     "tupfetched"        =>      qq{SELECT SUM(tup_fetched) FROM pg_stat_database},
