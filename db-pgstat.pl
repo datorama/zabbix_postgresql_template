@@ -79,7 +79,7 @@ GetOptions(
 
     'exclusivelock'             => sub { print query_database($querys{exclusivelock}) },
     'accessexclusivelock'       => sub { print query_database($querys{accessexclusivelock}) },
-    'accesssharelock'           => sub { print query_database($querys{accesssharelockery}) },
+    'accesssharelock'           => sub { print query_database($querys{accesssharelock}) },
     'rowsharelock'              => sub { print query_database($querys{rowsharelock}) },
     'rowexclusivelock'          => sub { print query_database($querys{xactcommit}) },
     'shareupdateexclusivelock'  => sub { print query_database($querys{shareupdateexclusivelock}) },
